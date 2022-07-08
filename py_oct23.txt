@@ -1,0 +1,16 @@
+Regular expression in AntConc
+
+Search for nominalizations
+\b[a-zA-Z]+(tion|ity|ness|ment|ship)\b
+
+Search for regular adjectives
+\b[a-zA-Z]+(tive|ous|ful|al|y)\b
+
+Search for progressive 
+\b(am|is|are|be|been|being|was|were)\b \b[a-zA-Z]+ing\b
+
+Search for passive voice
+\b(am|is|are|be|been|being|was|were)\b \b[a-zA-Z]+(ed|en)\b
+
+Search for passive voice (with irregular past participle)
+(\b(am|is|are|be|been|being|was|were)\b \b[a-zA-Z]+(ed|en)\b)|(\b(am|is|are|be|been|being|was|were)\b \b(cut|put|done|gone)\b)

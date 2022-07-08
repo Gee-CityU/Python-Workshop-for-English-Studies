@@ -1,0 +1,12 @@
+# read from a file and do sentence tokenization
+
+text = open ('C:/Users/Ge Lan/Desktop/sample.txt', 'r').read() #prepare your own plain text file
+sentences = text.split('.')
+print (sentences)
+
+sentence_count = 0
+for sentence in sentences:
+	sentence_count = sentence_count + 1
+	print (sentence)
+print ("there're "+sentence_count+" in the text")
+print ("Done...")

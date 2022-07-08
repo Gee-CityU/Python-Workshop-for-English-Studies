@@ -1,0 +1,26 @@
+# using NLTK to tag corpus
+# nltk tagset: http://stackoverflow.com/questions/15388831/what-are-all-possible-pos-tags-of-nltk
+
+import re
+import nltk
+from nltk.tokenize import word_tokenize
+str= open ('py_test.txt', 'r').read()
+str_nopunc=re.sub("\.|\,|\!","", str)
+
+words=word_tokenize(str_nopunc)
+tagged_words=nltk.pos_tag(words)
+
+print (tagged_words) #the results is in list structure
+
+id=0
+print (">>>>>Tagged corpus:\n")
+for pair in tagged_words:
+    (w, t)=pair
+    print(w+"_"+t) #this is a "TagAnt" or "CLAW" style POS tagging
+
+print ("\n>>>>>All adjectives:")
+for pair in tagged_words:
+    (w, t)=pair
+    if re.search("JJ", t):
+        id +=1
+        print (id,":", w) #use tagged corpus to search for adjectives

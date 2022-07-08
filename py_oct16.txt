@@ -1,0 +1,10 @@
+midterm_score = 80 
+final_score = 82
+mean_score=(midterm_score + final_score)/2
+print(mean_score)
+if mean_score > 82:
+	print ("You got a score.")	
+elif mean_score == 82:
+	print ("You score is ok.")
+else:
+	print("you suck!")

@@ -1,0 +1,6 @@
+# for loop 
+word_list = ["I","like","Python","and","like","PHP","."]
+for word in word_list: #pay attention to the colon end
+    print (word)
+print ("to be continued")
+

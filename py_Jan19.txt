@@ -1,0 +1,5 @@
+# while loop
+def_day = 1
+while def_day < 31: # pay attention to the colon at the end and also indent eveything in the loop
+    print (def_day)
+    def_month += 1 # the result will be influenced by where this argument is

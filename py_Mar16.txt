@@ -1,0 +1,9 @@
+# write in files
+
+text = 'Let's see if everyone feels goooooood on the Python workshop so far!'
+output_file = open ('C:/Users/Ge Lan/Desktop/output.txt', 'w') # create your own output file and change the back-front slash if you use windows
+output_file.write (text) #wrtie function can only take one argument
+output_file.close()
+print ("Done")
+
+

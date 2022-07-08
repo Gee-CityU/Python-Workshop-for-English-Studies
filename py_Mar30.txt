@@ -1,0 +1,13 @@
+# simple statistics
+
+import statistics # import statistics module and then assign appropriate value function to vars
+
+Freq = [62,466,787,80,123,39,206,56,9]
+x=statistics.mean(Freq)
+y=statistics.median(Freq)
+z=statistics.stdev(Freq)
+i=statistics.variance(Freq)
+print ("The mean is:", x)
+print ("The median is:", y)
+print ("The stdev is:", z)
+print ("The variance is:", i)

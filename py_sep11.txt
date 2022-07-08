@@ -1,0 +1,11 @@
+x="Welcome to the Python workshop."
+
+y= "Let's python up!"
+
+print (x)
+
+print (y)
+
+print (x,y)
+
+print (x+y) #check the difference between print (x,y) and print (x+y)

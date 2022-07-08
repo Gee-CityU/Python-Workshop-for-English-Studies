@@ -1,0 +1,7 @@
+# for loop & word counter
+wordcount=0 
+word_list = ["I","like","Python","and","like","PHP","."]
+for word in word_list: #pay attention to the colon end
+    print (word)
+    wordcount = wordcount + 1
+print ("There are:" , wordcount, "in the list.")

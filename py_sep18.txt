@@ -1,0 +1,47 @@
+x=1
+
+y=7
+
+
+a=x+y
+
+b=x-y
+
+c=x*y
+
+d=x/y
+
+
+
+#check to see if the calculation result is what you expect
+
+#what does "\n" mean?
+
+print("The result is:",a, "\n",
+"The result is:",b, "\n",
+"The result is:",c, "\n",
+"The result is:",d)
+
+#simplify your print
+z="the result is:"
+print(z,a,"\n",z,b) 
+
+
+
+#compare the printing results, what did you notice     
+
+print(type(x),type(a),type(b),type(d))
+
+
+
+#round the float 
+d_round=round(d, 2)
+
+print (d_round)
+
+
+
+#how to change a int to a str 
+
+a_str=str(a)
+print (type (a_str))

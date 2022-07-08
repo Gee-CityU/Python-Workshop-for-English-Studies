@@ -1,0 +1,40 @@
+#version 5 (find multiple punctuations based on regular expressions)
+'''
+import re
+sentence = '"Hm Err -- are you sure?" he said, sounding insecure.'
+punctuation = r'[.?\-",]+'
+print (re.findall(punctuation, sentence))
+'''
+
+#version 6 (replace all the punctuations based on regular expressions)
+'''
+import re
+sentence = "hello!!! this is amazing? what."
+sentence_new = re.sub("[.,?!'\";:-]", "", sentence)
+print(sentence_new)
+words = sentence_new.split(" ")
+print (words)
+'''
+
+#version 7 (split the sentence with punctuations based on regular expressions)
+
+import re
+sentence = "hello!!! this is amazing? what."
+words = re.split("[ .,?!'\";:-]+", sentence)
+print (words)
+words_new = list(filter(None, words))
+print (words_new)
+
+
+#version 8 (print a word list with def)
+'''
+def tokenizer (arg):
+    import re
+    words = re.split("[ .,?!'\";:-]+", arg)
+    words_new= list(filter(None, words))
+    return (words_new)
+
+sentence="hello!!! this is amazing? what."
+word_list= tokenizer (sentence)
+print (word_list)
+'''
